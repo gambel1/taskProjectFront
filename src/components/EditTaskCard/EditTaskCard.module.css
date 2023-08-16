@@ -1,0 +1,342 @@
+.title {
+  font-family: var(--font-medium);
+  color: inherit;
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  margin-bottom: 24px;
+}
+
+.input {
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 18px;
+  border: 1px solid var(--color-green);
+  opacity: 0.4;
+  margin-bottom: 14px;
+  color: inherit;
+  background-color: inherit;
+  box-shadow: 0px 4px 16px 0px var(--color-shadow);
+
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  transition: opacity 250ms linear;
+}
+.inputViolet {
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 18px;
+  border: 1px solid var(--color-violet);
+  opacity: 0.4;
+  margin-bottom: 14px;
+  color: inherit;
+  background-color: inherit;
+  box-shadow: 0px 4px 16px 0px var(--color-shadow);
+
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  transition: opacity 250ms linear;
+}
+.input:active,
+.input:hover,
+.input:focus,
+.input:focus-visible,
+.inputViolet:active,
+.inputViolet:hover,
+.inputViolet:focus,
+.inputViolet:focus-visible {
+  outline: none;
+  outline-offset: 0;
+  opacity: 1;
+}
+
+.input::placeholder,
+.inputViolet::placeholder,
+.textarea::placeholder,
+.textareaViolet::placeholder {
+  color: inherit;
+}
+
+.input:-webkit-autofill,
+.input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--color-white);
+  box-shadow: 0 0 0 30px var(--bg-color-form-input) inset !important;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 154px;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  border: 1px solid var(--color-green);
+  opacity: 0.4;
+  color: inherit;
+  background-color: inherit;
+  box-shadow: 0px 4px 16px 0px var(--color-shadow);
+  resize: none;
+
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  transition: opacity 250ms linear;
+}
+.textareaViolet {
+  width: 100%;
+  min-height: 154px;
+  border-radius: 8px;
+  padding: 14px 18px;
+  margin-bottom: 24px;
+  border: 1px solid var(--color-violet);
+  opacity: 0.4;
+  color: inherit;
+  background-color: inherit;
+  box-shadow: 0px 4px 16px 0px var(--color-shadow);
+  resize: none;
+
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  transition: opacity 250ms linear;
+}
+.textarea:active,
+.textarea:hover,
+.textarea:focus,
+.textarea:focus-visible,
+.textareaViolet:active,
+.textareaViolet:hover,
+.textareaViolet:focus,
+.textareaViolet:focus-visible {
+  outline: none;
+  outline-offset: 0;
+  opacity: 1;
+}
+
+.textarea:-webkit-autofill,
+.textarea:-webkit-autofill:hover,
+.textarea:-webkit-autofill:focus,
+.textarea:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--color-white);
+  box-shadow: 0 0 0 30px var(--bg-color-form-input) inset !important;
+}
+
+.wrap {
+  display: flex;
+}
+
+.label {
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--font-regular);
+  font-size: 12px;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  color: rgba(22, 22, 22, 0.5);
+}
+
+.radio {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  background-color: blueviolet;
+}
+
+[type='radio']:checked + .radio {
+  background-color: red;
+  color: white;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  height: 49px;
+  background-color: var(--color-green);
+  color: var(--color-dark);
+
+  font-family: var(--font-medium);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  text-align: center;
+  cursor: pointer;
+  padding: 14px 0px;
+  border: 0px;
+  border-radius: 8px;
+
+  transition: background-color 250ms linear, box-shadow 250ms linear;
+}
+
+.btn:hover {
+  background-color: var(--color-hover-green);
+}
+
+.btnViolet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 24px;
+  height: 49px;
+  background-color: var(--color-violet);
+  color: var(--color-white);
+  font-family: var(--font-medium);
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+
+  text-align: center;
+  cursor: pointer;
+  padding: 14px 0px;
+  border: 0px;
+  border-radius: 8px;
+
+  transition: background-color 250ms linear, box-shadow 250ms linear;
+}
+
+.btnViolet:hover {
+  background-color: var(--color-violet);
+}
+.sidebarBoardButton {
+  display: flex;
+  padding: 0;
+  border: none;
+  background: var(--color-icon-dark);
+}
+
+.btnIcon {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 8px;
+  fill: var(--color-dark);
+  stroke: #fff;
+  margin-right: 8px;
+}
+.btnIconViolet {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 8px;
+  fill: var(--color-white);
+  stroke: var(--color-violet);
+  margin-right: 8px;
+}
+
+.priorityIcons {
+  display: flex;
+}
+.radioLabel {
+  align-items: center;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioButton,
+.radioButtonDark {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-right: 8px;
+
+  position: relative;
+}
+
+.radioButtonDark::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-icon-dark);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.radioButton::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.radioInput:checked + .radioButton::before,
+.radioInput:checked + .radioButtonDark::before {
+  opacity: 1;
+}
+
+.cardButtonDark {
+  height: 20px;
+  width: 20px;
+  fill: none;
+  stroke: var(--color-icon-grey);
+  background-color: transparent;
+  border: none;
+  padding: 2px;
+}
+
+.cardButtonLight,
+.cardButtonViolet {
+  height: 20px;
+  width: 20px;
+  fill: none;
+  background-color: transparent;
+  stroke: rgba(22, 22, 22, 0.5);
+  border: none;
+  padding: 2px;
+}
+
+.cardButtonDark:hover,
+.cardButtonLight:hover {
+  transform: scale(1.2);
+  stroke: var(--color-green);
+}
+
+.cardButtonViolet:hover {
+  stroke: var(--color-violet);
+  transform: scale(1.2);
+}
+
+.wrapError {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  font-family: var(--font-regular);
+  font-size: 10px;
+  color: var(--color-hover-green);
+}

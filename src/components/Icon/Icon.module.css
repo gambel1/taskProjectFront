@@ -1,0 +1,31 @@
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  fill: none;
+
+  transition: transform 250ms linear, stroke 250ms linear;
+}
+
+.tip {
+  position: absolute;
+  transform: translateY(-20px);
+  transform: scale(0.1);
+  visibility: hidden;
+  background-color: #6d6d6d;
+  padding: 0px 6px;
+  border-radius: 3px;
+  color: var(--color-white);
+  font-family: var(--font-medium);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.icon:hover .tip {
+  visibility: visible;
+  transform: scale(1);
+  transform: translateY(-20px);
+  transition: transform 0.2s ease-in-out;
+}

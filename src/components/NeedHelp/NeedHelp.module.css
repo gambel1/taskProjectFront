@@ -1,0 +1,95 @@
+.dark {
+  background-color: var(--bg-color-form-input);
+  color: var(--color-white);
+  stroke: var(--color-white);
+  fill: var(--bg-color-form-input);
+  border-radius: 8px;
+}
+
+.light {
+  background-color: #f6f6f7;
+  color: #161616;
+  stroke: #161616;
+  fill: #f6f6f7;
+  border-radius: 8px;
+}
+
+.violet {
+  background-color: var(--bg-color-need-help);
+  color: #fff;
+  stroke: #fff;
+  fill: var(--bg-color-need-help);
+  border-radius: 8px;
+}
+
+/* Sidebar Help  */
+.sidebarHelp {
+  padding: 14px 14px 15px 15px;
+  border-radius: 8px;
+  background-color: inherit;
+  color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .sidebarHelp {
+    /* margin: 0 24px 24px 24px; */
+    padding: 20px 20px 21px 20px;
+    border-radius: 8px;
+    background-color: inherit;
+    color: inherit;
+  }
+}
+
+.sidebarHelpBox {
+  margin: 14px 0 19px 0;
+}
+
+.sidebarHelpBoxItem {
+  font-family: var(--font-regular);
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: -0.28px;
+  color: inherit;
+}
+
+.sidebarHelpBoxLinkGreen {
+  font-family: var(--font-regular);
+  color: var(--color-green);
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+.sidebarHelpBoxLinkViolet {
+  font-family: var(--font-regular);
+  color: var(--color-violet);
+  border: none;
+  background-color: inherit;
+  padding: 0;
+}
+
+.sidebarHelpBoxLinkViolet:hover {
+  opacity: 0.7;
+}
+
+.sidebarHelpBoxLinkGreen:hover {
+  color: var(--color-hover-green);
+}
+
+.sidebarHelpWrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sidebarHelpIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.sidebarHelpNeedHelp {
+  font-family: var(--font-medium);
+  font-size: 12px;
+  letter-spacing: -0.24px;
+  color: inherit;
+}

@@ -1,0 +1,93 @@
+.rdp {
+  opacity: 1;
+}
+.rdp-day_selected {
+  background-color: var(--rdp-accent-color);
+}
+.dark {
+  /* opacity: 1; */
+  background-color: var(--bg-color-form-input);
+  border-radius: 8px;
+  border: 1px solid var(--color-green);
+  padding: 18px;
+  color: var(--color-white);
+  z-index: 3000;  
+}
+
+.light {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-green);
+  padding: 18px;
+  color: var(--bg-color-form-input);
+  z-index: 3000;  
+}
+
+.violet {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-violet);
+  padding: 18px;
+  color: var(--bg-color-form-input);
+  z-index: 3000;  
+}
+
+.rdp-months {
+  background: var(--bg-color-form-input);
+  border-radius: 8px;
+  border: 1px solid var(--color-green);
+  padding: 18px;
+  color: inherit;
+}
+.rdp-button_reset {
+  color: white;
+  font: var(--font-regular);
+}
+
+.rdp-button:focus-visible:not([disabled]) {
+  color: inherit;
+  background-color: yellowgreen;
+  border: var(--rdp-outline);
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+  background-color: var(--color-hover-green);
+}
+
+.rdp-day_today:not(.rdp-day_outside) {
+  color: red;
+}
+
+.rdp-day_selected,
+.rdp-day_selected:focus-visible,
+.rdp-day_selected:hover {
+  color: white;
+  opacity: 1;
+  background-color: var(--rdp-accent-color);
+}
+
+.rdp-head_cell {
+  /* vertical-align: middle;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-align: center;
+  height: 100%;
+  height: var(--rdp-cell-size);
+  padding: 0;
+  text-transform: uppercase; */
+  color: var(--color-icon-grey);
+}
+
+.rdp-caption_label {
+  color: var(--color-white);
+}
+.calendarButton {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}

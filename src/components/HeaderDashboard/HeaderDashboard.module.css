@@ -1,0 +1,241 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    padding: 20px 10px;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .wrapper {
+    padding: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .wrapper {
+    padding: 26px 32px 15px 32px;
+  }
+}
+
+.title {
+  font-family: 'PoppinsMedium', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    padding: 10px 24px 15px 32px;
+  }
+
+  .title {
+    letter-spacing: -0.36px;
+  }
+}
+
+.filter,
+.filterViolet {
+  margin-left: auto;
+  border: none;
+  background-color: inherit;
+  display: flex;
+  gap: 8px;
+  color: inherit;
+  opacity: 0.8;
+  font-family: 'PoppinsMedium', sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  align-items: center;
+  stroke: inherit;
+  fill: inherit;
+  transition: color 250ms linear;
+}
+
+.filter:hover {
+  color: var(--color-green);
+}
+
+.filterViolet:hover {
+  color: var(--color-violet);
+}
+
+.iconViolet,
+.iconLight {
+  stroke: var(--color-text-grey);
+  fill: var(--bg-color-light);
+
+  transition: stroke 250ms linear;
+}
+
+.iconDark {
+  stroke: var(--color-icon-light);
+  transition: stroke 250ms linear;
+}
+
+.iconViolet:hover {
+  stroke: var(--color-violet);
+}
+
+.iconLight:hover,
+.iconDark:hover {
+  stroke: var(--color-green);
+}
+
+.filterViolet:hover .iconViolet {
+  stroke: var(--color-violet);
+}
+
+.filter:hover .iconLight,
+.filter:hover .iconDark {
+  stroke: var(--color-green);
+}
+
+.filterText {
+  height: 20px;
+}
+
+.modalFilterWrapper {
+  display: block;
+}
+
+.modalFilter {
+  color: inherit;
+  font-family: 'PoppinsMedium', sans-serif;
+  font-size: 18px;
+  letter-spacing: -0.36px;
+}
+
+.modalBoardDark {
+  height: 1px;
+  background-color: var(--color-sidebar-border);
+  margin-top: 14px;
+}
+
+.modalBoard {
+  height: 1px;
+  background-color: rgba(22, 22, 22, 0.1);
+  margin-top: 14px;
+}
+
+.modalLabel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+
+.modalLabelHeader {
+  font-family: 'PoppinsMedium', sans-serif;
+  font-size: 14px;
+  letter-spacing: -0.28px;
+}
+
+.modalShowAll {
+  border: none;
+  background-color: inherit;
+  color: inherit;
+  opacity: 0.5;
+  font-family: 'PoppinsRegular', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.24px;
+  text-decoration-line: underline;
+}
+
+.modalCheckbox {
+  display: flex;
+  gap: 8px;
+  font-family: 'PoppinsRegular', sans-serif;
+  font-size: 12px;
+  letter-spacing: -0.24px;
+}
+
+.modalCheckbox:hover {
+  cursor: pointer;
+}
+
+.modalListOptions {
+  margin-top: 14px;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radio input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+
+label {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.radioText,
+.radioTextDark {
+  position: relative;
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  color: var(--color-sidebar-border);
+}
+
+.radioText::before,
+.radioTextDark::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.radioText::after,
+.radioTextDark::after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.radio input:checked + .radioText::after,
+.radio input:checked + .radioTextDark::after {
+  opacity: 1;
+}
+.radio input:focus + .radioTextDark::before {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-icon-dark);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+}
+.radio input:focus + .radioText::before {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--color-white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s;
+}

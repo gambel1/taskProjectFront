@@ -1,0 +1,235 @@
+dark {
+  background-color: var(--bg-color-form);
+  color: var(--color-white);
+  stroke: var(--color-white);
+  fill: var(--bg-color-form);
+}
+
+.light {
+  background-color: #fcfcfc;
+  color: #161616;
+  stroke: #161616;
+}
+
+.violet {
+  background-color: #fcfcfc;
+  color: #161616;
+  stroke: #161616;
+}
+.title {
+  font-family: var(--font-medium);
+  font-size: 18px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.36px;
+  margin-right: auto;
+}
+
+.text {
+  font-family: var(--font-regular);
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  margin-right: auto;
+  padding: 20px 0;
+}
+
+.field {
+  width: 100%;
+  height: 49px;
+  padding: 14px 18px;
+  margin-top: 24px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--color-green);
+  opacity: 0.4;
+  background-color: inherit;
+  color: inherit;
+
+  box-shadow: 0px 4px 16px 0px var(--color-text-grey);
+  font-family: var(--font-regular);
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+.fieldViolet {
+  width: 100%;
+  height: 49px;
+  padding: 14px 18px;
+  margin-top: 24px;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid var(--color-violet);
+  opacity: 0.4;
+  background-color: inherit;
+  color: inherit;
+  box-shadow: 0px 4px 16px 0px var(--color-text-grey);
+  font-family: var(--font-regular);
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.28px;
+}
+
+.field:focus,
+.fieldViolet:focus,
+.field:focus-visible,
+.fieldViolet:focus-visible {
+  outline: none;
+  opacity: 1;
+  color: inherit;
+}
+
+.label {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--font-medium);
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  margin-top: 24px;
+}
+
+.priority {
+  margin-top: 14px;
+  display: flex;
+  gap: 8px;
+  border: none;
+  padding-left: 0;
+}
+
+.input_svg,
+.input_png {
+  display: none;
+}
+
+.input_svg:checked + label > svg {
+  stroke-opacity: 1;
+}
+
+.label_svg {
+  cursor: pointer;
+}
+
+.svg {
+  stroke: inherit;
+  fill: none;
+  stroke-opacity: 0.5;
+  /* stroke: inherit;  */
+  /* stroke: #ffffff80; */
+  transition: transform 0.25s ease, stroke-opacity 0.25s ease;
+}
+
+.svg:hover,
+.svg:focus {
+  transform: scale(1.4);
+  stroke-opacity: 1;
+}
+
+.bg_priority {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 14px;
+  width: 270px;
+  cursor: pointer;
+  border: none;
+  padding-left: 0;
+}
+
+.input_png:checked + label > img {
+  stroke-opacity: 1;
+  border-radius: 6px;
+  border: 2px solid #808080;
+}
+
+.label_png {
+  cursor: pointer;
+}
+
+.png {
+  stroke: inherit;
+  stroke-opacity: 0.5;
+  transition: transform 0.25s ease, stroke-opacity 0.25s ease;
+}
+
+.png:hover,
+.png:focus {
+  transform: scale(1.2);
+  stroke-opacity: 1;
+}
+.btn {
+  position: relative;
+  width: 100%;
+  height: 49px;
+  padding: 0;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 10px 0px 11px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--color-green);
+  text-align: center;
+  color: var(--color-dark);
+  font-family: var(--font-medium);
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  transition: background-color 0.25s ease;
+}
+.btnViolet {
+  position: relative;
+  width: 100%;
+  height: 49px;
+  padding: 0;
+  border: none;
+  margin-top: 16px;
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  padding: 10px 0px 11px 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--color-violet);
+  text-align: center;
+  color: var(--color-white);
+  font-family: var(--font-medium);
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  transition: background-color 0.25s ease;
+}
+.btn:hover {
+  background-color: var(--color-hover-green);
+}
+.btnViolet:hover {
+  background-color: var(--color-light-violet);
+}
+.icon {
+  border-radius: 8px;
+  fill: var(--color-dark);
+  stroke: var(--color-white);
+}
+.iconViolet {
+  border-radius: 8px;
+  fill: var(--color-white);
+  stroke: var(--color-violet);
+}
+.text {
+  text-align: center;
+  padding: 30px;
+  font-size: 18px;
+}

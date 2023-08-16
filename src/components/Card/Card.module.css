@@ -1,0 +1,239 @@
+.dark {
+  background-color: var(--color-icon-dark);
+  color: var(--color-white);
+  stroke: var(--color-white);
+  fill: var(--bg-color-form-input);
+  border-radius: 8px;
+}
+
+.light {
+  background-color: var(--color-white);
+  color: #161616;
+  stroke: #161616;
+  fill: none;
+  border-radius: 8px;
+}
+
+.violet {
+  background-color: var(--color-white);
+  color: var(--color-icon-dark);
+  stroke: var(--color-icon-dark);
+  fill: none;
+  border-radius: 8px;
+}
+
+.card {
+  width: 320px;
+  height: 154px;
+  border-radius: 8px;
+  background-color: inherit;
+  color: inherit;
+  position: relative;
+}
+@media screen and (max-width: 375px) {
+  .card {
+    max-width: 320px;
+    width: auto;
+  }
+}
+.card::before {
+  content: '';
+  display: block;
+  width: 4px;
+  height: 100%;
+  /* background-color: var(--color-pink); */
+  border-radius: 4px 0px 0px 4px;
+  position: absolute;
+}
+
+.textWrapper {
+  padding: 14px 20px 14px 24px;
+}
+
+.title {
+  color: inherit;
+  /* color: var(--color-white); */
+  font-family: var(--font-semibold);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.28px;
+  margin-bottom: 8px;
+}
+
+.description {
+  max-width: 290px;
+  color: inherit;
+  /* color: var(--color-icon-grey); */
+  font-family: var(--font-regular);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: -0.24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.subTitle {
+  color: inherit;
+  /* color: var(--color-icon-grey); */
+  font-family: var(--font-regular);
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.16px;
+}
+
+.deadlineText,
+.priorityText {
+  color: inherit;
+  /* color: var(--color-white); */
+  font-family: var(--font-regular);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.2px;
+}
+
+.priorityText {
+  margin-left: 16px;
+  position: relative;
+}
+
+.priorityText::before {
+  content: '';
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  /* background-color: var(--color-pink); */
+  border-radius: 50%;
+  position: absolute;
+  left: -16px;
+}
+
+.cardButtonDark {
+  height: 20px;
+  width: 20px;
+  fill: none;
+  stroke: var(--color-icon-grey);
+  background-color: transparent;
+  /* background-color: var(--color-icon-dark);  */
+  border: none;
+  padding: 2px;
+  transition: transform 250ms linear, stroke 250ms linear;
+}
+
+.cardButtonLight,
+.cardButtonViolet {
+  height: 20px;
+  width: 20px;
+  fill: none;
+  background-color: transparent;
+  stroke: rgba(22, 22, 22, 0.5);
+  border: none;
+  padding: 2px;
+  transition: transform 250ms linear, stroke 250ms linear;
+}
+
+.cardButtonDark:hover,
+.cardButtonLight:hover {
+  transform: scale(1.2);
+  stroke: var(--color-green);
+}
+
+.cardButtonViolet:hover {
+  stroke: var(--color-violet);
+  transform: scale(1.2);
+}
+
+.cardButtonBell {
+  height: 20px;
+  width: 20px;
+  stroke: inherit;
+
+  background-color: transparent;
+
+  border: none;
+  padding: 2px;
+  pointer-events: none;
+}
+
+.wrapper,
+.wrapperDark {
+  display: flex;
+  position: relative;
+  padding: 14px 14px 14px 24px;
+  align-items: flex-end;
+}
+
+.wrapperDark::before {
+  content: '';
+  display: block;
+  width: 210px;
+  height: 1px;
+  background-color: var(--color-bg-light);
+  position: absolute;
+  top: 0;
+}
+@media screen and (min-width: 375px) {
+  .wrapperDark::before {
+    width: 290px;
+  }
+}
+
+.cardIcons {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.cardIcon {
+  padding: 0;
+  margin: 0;
+}
+
+.priority {
+  margin-right: 14px;
+}
+
+.subTitle {
+  margin-bottom: 4px;
+}
+
+.cardIcon:first-child {
+  margin-right: 12px;
+}
+
+.bellViolet {
+  stroke: var(--color-violet);
+}
+.bell {
+  stroke: var(--color-green);
+}
+
+.priority_high::before,
+.priorityDark_high::before {
+  background-color: var(--color-green);
+}
+.priority_medium::before,
+.priorityDark_medium::before {
+  background-color: var(--color-pink);
+}
+.priority_low::before,
+.priorityDark_low::before {
+  background-color: var(--color-blue);
+}
+.priorityDark_without::before {
+  background-color: var(--color-form-light);
+}
+.priority_without::before {
+  background-color: rgba(22, 22, 22, 0.3);
+}
